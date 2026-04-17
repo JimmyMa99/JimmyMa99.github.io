@@ -133,7 +133,7 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.9fr);
   gap: 22px;
-  padding: 34px;
+  padding: 30px;
   border-radius: calc(var(--radius) + 8px);
 }
 
@@ -158,8 +158,8 @@ main {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-  max-width: 12ch;
+  font-size: clamp(2.2rem, 4.6vw, 4rem);
+  max-width: 11ch;
 }
 
 .lead {
@@ -242,18 +242,19 @@ main {
 
 .profile-card {
   display: grid;
-  gap: 18px;
-  padding: 20px;
+  gap: 14px;
+  padding: 18px;
 }
 
 .profile-photo {
   width: 100%;
-  max-width: 240px;
+  max-width: 168px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 24px;
-  justify-self: center;
+  border-radius: 28px;
+  justify-self: start;
   background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(19, 53, 47, 0.08);
 }
 
 .focus-list {
@@ -262,6 +263,20 @@ main {
   margin: 12px 0 0;
   padding-left: 18px;
   color: var(--muted);
+}
+
+.mini-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid rgba(19, 53, 47, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.compact-list {
+  gap: 8px;
+  margin-top: 0;
 }
 
 .section-block,
